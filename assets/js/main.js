@@ -56,6 +56,13 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
+sr.reveal('.logoredesign__container a, .illustrator__img, .photoshop__img, .animate__img', {
+    interval: 200,
+    origin: 'bottom',
+    distance: '30px',
+    duration: 1000,
+    easing: 'ease-in-out'
+});
 
 /*===== CONTACT FORM MESSAGE =====*/
 const contactForm = document.getElementById('contact-form');
@@ -68,6 +75,3 @@ if (contactForm) {
         contactForm.reset(); // очищаем форму
     });
 }
-
-
-

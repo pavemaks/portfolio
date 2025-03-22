@@ -306,19 +306,19 @@ img {
     border-radius: 0.5rem;
 }
 
-/* ===== WORK =====*/
-.work__container {
+/* ===== logoredesign =====*/
+.logoredesign__container {
     row-gap: 2rem;
 }
-.work__img {
+.logoredesign__img {
     box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
     border-radius: 0.5rem;
     overflow: hidden;
 }
-.work__img img {
+.logoredesign__img img {
     transition: 1s;
 }
-.work__img img:hover {
+.logoredesign__img img:hover {
     transform: scale(1.1);
 }
 /* ===== illustrator =====*/
@@ -336,6 +336,40 @@ img {
 .illustrator__img img:hover {
     transform: scale(1.1);
 }
+
+/* ===== photoshop =====*/
+.photoshop__container {
+    row-gap: 2rem;
+}
+.photoshop__img {
+    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.photoshop__img img {
+    transition: 1s;
+}
+.photoshop__img img:hover {
+    transform: scale(1.1);
+}
+
+/* ===== animate =====*/
+.animate__container {
+    row-gap: 2rem;
+}
+.animate__img {
+    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.animate__img img {
+    transition: 1s;
+}
+.animate__img img:hover {
+    transform: scale(1.1);
+}
+
+
 /* ===== CONTACT =====*/
 .contact__input {
     width: 100%;
@@ -482,6 +516,22 @@ img {
         text-align: initial;
     }
     .work__container {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+    .illustrator__container__container {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+    .photoshop__container {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+    .animate__container {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+    .logoredesign__container {
         grid-template-columns: repeat(3, 1fr);
         column-gap: 2rem;
     }
