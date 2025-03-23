@@ -9,6 +9,27 @@ const showMenu = (toggleId, navId) =>{
         })
     }
 }
+
+/*===== LANGUAGE PLACEHOLDER SUPPORT =====*/
+function setLanguage(lang) {
+  const elements = document.querySelectorAll('.lang');
+  elements.forEach(el => {
+    const text = el.getAttribute(`data-${lang}`);
+    if (text) el.textContent = text;
+  });
+
+  // handle form placeholders
+  const placeholders = {
+    name: { en: "Name", ru: "Имя" },
+    email: { en: "Email", ru: "Почта" },
+    message: { en: "Message", ru: "Сообщение" }
+  };
+
+  const inputs = document.querySelectorAll('.contact__form input, .contact__form textarea');
+  if (inputs[0]) inputs[0].placeholder = placeholders.name[lang];
+  if (inputs[1]) inputs[1].placeholder = placeholders.email[lang];
+  if (inputs[2]) inputs[2].placeholder = placeholders.message[lang];
+}
 showMenu('nav-toggle','nav-menu')
 
 /*==================== REMOVE MENU MOBILE ====================*/

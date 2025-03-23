@@ -32,14 +32,14 @@
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#logoredesign" class="nav__link">Redesign</a></li>
-                        <li class="nav__item"><a href="#illustrator" class="nav__link">Illustator</a></li>
+                        <li class="nav__item"><a href="#home" class="nav__link active-link lang" data-en="Home" data-ru="Главная">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link lang" data-en="About" data-ru="Обо мне">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link lang" data-en="Skills" data-ru="Навыки">Skills</a></li>
+                        <li class="nav__item"><a href="#logoredesign" class="nav__link lang" data-en="Redesign" data-ru="Редизайн">Redesign</a></li>
+                        <li class="nav__item"><a href="#illustrator" class="nav__link">Illustrator</a></li>
                         <li class="nav__item"><a href="#photoshop" class="nav__link">Photoshop</a></li>
                         <li class="nav__item"><a href="#animate" class="nav__link">Animate</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link lang" data-en="Contact" data-ru="Контакты">Contact</a></li>
                     </ul>
                 </div>
 
@@ -47,15 +47,23 @@
                     <i class='bx bx-menu'></i>
                 </div>
             </nav>
+            <div class="language-switcher" style="position: absolute; top: 1rem; right: 1rem;">
+                <button onclick="setLanguage('en')">EN</button>
+                <button onclick="setLanguage('ru')">RU</button>
+            </div>
         </header>
 
         <main class="l-main">
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Pavel</span><br> Web Designer</h1>
+                    <h1 class="home__title lang"
+                        data-en='Hi,<br>I&apos;m <span class="home__title-color">Pavel</span><br> Web Designer'
+                        data-ru='Привет,<br>Я <span class="home__title-color">Pavel</span><br> Веб-дизайнер'>
+                        Hi,<br>I&apos;m <span class="home__title-color">Pavel</span><br> Web Designer
+                    </h1>
 
-                    <a href="#contact" class="button">Contact</a>
+                    <a href="#contact" class="button lang" data-en="Contact" data-ru="Контакт">Contact</a>
                 </div>
 
                 <div class="home__social">
@@ -85,28 +93,27 @@
 
             <!--===== ABOUT =====-->
             <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
+                <h2 class="section-title lang" data-en="About" data-ru="Обо мне">About</h2>
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
                         <img src="assets/img/perfil.jpg" alt="">
                     </div>
-                    
+
                     <div>
-                        <h2 class="about__subtitle">I'am Pavel</h2>
-                        <p class="about__text">
-                            My name is Pavel and I am currently studying at the Estonian Entrepreneurship University of Applied Sciences (EUAS).
-                            This portfolio showcases creative projects I have completed during my studies — including graphic illustrations and animations.
-                            Additionally, I had the opportunity to redesign the logo for a real company, <strong>V&amp;R Mobiiliäri</strong>, as part of an external project.
+                        <h2 class="about__subtitle lang" data-en="About me" data-ru="Обо мне">About me</h2>
+                        <p class="about__text lang"
+                           data-en="My name is Pavel and I am currently studying at the Estonian Entrepreneurship University of Applied Sciences (EUAS). This portfolio showcases creative projects I have completed during my studies — including graphic illustrations and animations. Additionally, I had the opportunity to redesign the logo for a real company, V&R Mobiiliäri, as part of an external project. The works were made using tools such as Adobe Illustrator, Photoshop, and Animate as part of various assignments and personal exploration of design."
+                           data-ru="Меня зовут Павел, я учусь в Эстонском университете прикладных наук предпринимательства (EUAS). В этом портфолио представлены творческие проекты, выполненные мной в процессе учёбы — такие как графические иллюстрации и анимации. Также у меня была возможность сделать редизайн логотипа для реальной компании V&R Mobiiliäri в рамках внешнего проекта. Работы выполнены с использованием Adobe Illustrator, Photoshop и Animate.">
+                           My name is Pavel and I am currently studying at the Estonian Entrepreneurship University of Applied Sciences (EUAS)...
                         </p>
-                        </p>
-                    </div>                                   
+                    </div>
                 </div>
             </section>
 
             <!--===== SKILLS =====-->
             <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
+                <h2 class="section-title lang" data-en="Skills" data-ru="Навыки">Skills</h2>
 
                 <div class="skills__container bd-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
                     <div>
@@ -186,10 +193,11 @@
 
             <!--===== WORK =====-->
             <section class="logoredesign section" id="logoredesign">
-                <h2 class="section-title">Logo Redesign</h2>
-                <p class="logoredesign__description" style="max-width: 700px; margin: 0 auto 2rem; text-align: center;">
-                    In this section, I present the redesign of the logo for V&R Mobiiliäri.
-                    The main goal was to modernize the brand identity while preserving the core visual elements. I focused on improving clarity, scalability, and visual harmony, making the logos more adaptable for both digital and print use.
+                <h2 class="section-title lang" data-en="Logo Redesign" data-ru="Редизайн логотипа">Logo Redesign</h2>
+                <p class="logoredesign__description lang" style="max-width: 700px; margin: 0 auto 2rem; text-align: center;"
+                   data-en="In this section, I present the redesign of the logo for V&amp;R Mobiiliäri. The main goal was to modernize the brand identity while preserving the core visual elements. I focused on improving clarity, scalability, and visual harmony, making the logos more adaptable for both digital and print use."
+                   data-ru="В этом разделе представлен редизайн логотипа для компании V&amp;R Mobiiliäri. Основная цель заключалась в обновлении визуальной айдентики при сохранении ключевых элементов. Я сосредоточился на улучшении читаемости, масштабируемости и визуального баланса, чтобы логотип лучше подходил как для цифровых, так и для печатных материалов.">
+                    In this section, I present the redesign of the logo for V&amp;R Mobiiliäri...
                 </p>
 
                 <div class="logoredesign__container bd-grid"style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
@@ -317,14 +325,14 @@
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
+                <h2 class="section-title lang" data-en="Contact" data-ru="Контакты">Contact</h2>
 
                 <div class="contact__container bd-grid">
                         <form id="contact-form" class="contact__form">
                             <input type="text" placeholder="Name" class="contact__input" required>
                             <input type="email" placeholder="Email" class="contact__input" required>
                             <textarea cols="0" rows="10" class="contact__input" placeholder="Message" required></textarea>
-                            <button type="submit" class="contact__button button">Send</button>
+                            <button type="submit" class="contact__button button lang" data-en="Send" data-ru="Отправить">Send</button>
                             <p id="form-message" style="display:none; color: green; margin-top: 1rem;">Thank you! Your message has been sent.</p>
                         </form>
                     </form>
@@ -349,7 +357,7 @@
                     <i class='bx bxl-gmail'></i>
                 </a>
             </div>
-            <p class="footer__copy">pavel.maksimov@gmail.com</p>
+            <p class="footer__copy">pavel.maksimov2010@gmail.com</p>
             <p class="footer__copy">+37255584909</p>
         </footer>
 
@@ -361,5 +369,21 @@
         <script src="assets/js/main.js"></script>
         <!-- Lightbox2 JS -->
         <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
+        <script>
+          function setLanguage(lang) {
+            const elements = document.querySelectorAll('.lang');
+            elements.forEach(el => {
+              const raw = el.getAttribute(`data-${lang}`);
+              if (raw) {
+                // если текст содержит HTML-теги, заменить через innerHTML
+                if (raw.includes('<br>') || raw.includes('<span')) {
+                  el.innerHTML = raw;
+                } else {
+                  el.textContent = raw;
+                }
+              }
+            });
+          }
+        </script>
     </body>
 </html>
