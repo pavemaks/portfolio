@@ -1,389 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-        <!-- Lightbox2 CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
+    <!-- Lightbox2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
 
-        <title>Pavel Maksimov | Graphic Designer Portfolio</title>
-    </head>
-    <script>
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault(); // остановим отправку формы
-            document.getElementById('form-message').style.display = 'block';
-            this.reset(); // очистка формы
-        });
-    </script>
+    <title>Pavel Maksimov | Graphic Designer Portfolio</title>
+</head>
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+        e.preventDefault(); // остановим отправку формы
+        document.getElementById('form-message').style.display = 'block';
+        this.reset(); // очистка формы
+    });
+</script>
 
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">My Portfolio</a>
-                </div>
+<body>
+<!--===== HEADER =====-->
+<header class="l-header">
+    <nav class="nav bd-grid">
+        <div>
+            <a href="#" class="nav__logo">My Portfolio</a>
+        </div>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link lang" data-en="Home" data-ru="Главная">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link lang" data-en="About" data-ru="Обо мне">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link lang" data-en="Skills" data-ru="Навыки">Skills</a></li>
-                        <li class="nav__item"><a href="#logoredesign" class="nav__link lang" data-en="Redesign" data-ru="Редизайн">Redesign</a></li>
-                        <li class="nav__item"><a href="#illustrator" class="nav__link">Illustrator</a></li>
-                        <li class="nav__item"><a href="#photoshop" class="nav__link">Photoshop</a></li>
-                        <li class="nav__item"><a href="#animate" class="nav__link">Animate</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link lang" data-en="Contact" data-ru="Контакты">Contact</a></li>
-                    </ul>
-                </div>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                <li class="nav__item"><a href="#logoredesign" class="nav__link">Redesign</a></li>
+                <li class="nav__item"><a href="#illustrator" class="nav__link">Illustator</a></li>
+                <li class="nav__item"><a href="#photoshop" class="nav__link">Photoshop</a></li>
+                <li class="nav__item"><a href="#animate" class="nav__link">Animate</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </div>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-            <div class="language-switcher" style="position: absolute; top: 1rem; right: 1rem;">
-                <button onclick="setLanguage('en')">EN</button>
-                <button onclick="setLanguage('ru')">RU</button>
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+</header>
+
+<main class="l-main">
+    <!--===== HOME =====-->
+    <section class="home bd-grid" id="home">
+        <div class="home__data">
+            <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Pavel</span><br> Web Designer</h1>
+
+            <a href="#contact" class="button">Contact</a>
+        </div>
+
+        <div class="home__social">
+            <a href="https://www.facebook.com/pavel.maksimov2010" class="home__social-icon" target="_blank">
+                <i class='bx bxl-facebook'></i>
+            </a>
+            <a href="https://www.instagram.com/_pavel_maksimov_/?igsh=dDZlbG40ZmQzYmVl&utm_source=qr" class="home__social-icon" target="_blank">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="https://t.me/sniderv2" class="home__social-icon" target="_blank">
+                <i class='bx bxl-telegram'></i>
+            </a>
+        </div>
+
+        <div class="home__img">
+            <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <mask id="mask0" mask-type="alpha">
+                    <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                </mask>
+                <g mask="url(#mask0)">
+                    <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                    <image class="home__blob-img" x="50" y="60" href="assets/img/about.png"/>
+                </g>
+            </svg>
+        </div>
+    </section>
+
+    <!--===== ABOUT =====-->
+    <section class="about section " id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+            <div class="about__img">
+                <img src="assets/img/perfil.jpg" alt="">
             </div>
-        </header>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title lang"
-                        data-en='Hi,<br>I&apos;m <span class="home__title-color">Pavel</span><br> Web Designer'
-                        data-ru='Привет,<br>Я <span class="home__title-color">Павел</span><br> Веб-дизайнер'>
-                        Hi,<br>I&apos;m <span class="home__title-color">Pavel</span><br> Web Designer
-                    </h1>
-
-                    <a href="#contact" class="button lang" data-en="Contact" data-ru="Контакт">Contact</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="https://www.facebook.com/pavel.maksimov2010" class="home__social-icon" target="_blank">
-                        <i class='bx bxl-facebook'></i>
-                    </a>
-                    <a href="https://www.instagram.com/_pavel_maksimov_/?igsh=dDZlbG40ZmQzYmVl&utm_source=qr" class="home__social-icon" target="_blank">
-                        <i class='bx bxl-instagram'></i>
-                    </a>
-                    <a href="https://t.me/sniderv2" class="home__social-icon" target="_blank">
-                        <i class='bx bxl-telegram'></i>
-                    </a>
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/about.png"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title lang" data-en="About" data-ru="Обо мне">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/perfil.jpg" alt="">
-                    </div>
-
-                    <div>
-                        <h2 class="about__subtitle lang" data-en="About me" data-ru="Обо мне">About me</h2>
-                        <p class="about__text lang"
-                           data-en="My name is Pavel and I am currently studying at the Estonian Entrepreneurship University of Applied Sciences (EUAS). This portfolio showcases creative projects I have completed during my studies — including graphic illustrations and animations. Additionally, I had the opportunity to redesign the logo for a real company, V&R Mobiiliäri, as part of an external project. The works were made using tools such as Adobe Illustrator, Photoshop, and Animate as part of various assignments and personal exploration of design."
-                           data-ru="Меня зовут Павел, я учусь в Эстонском университете прикладных наук предпринимательства (EUAS). В этом портфолио представлены творческие проекты, выполненные мной в процессе учёбы — такие как графические иллюстрации и анимации. Также у меня была возможность сделать редизайн логотипа для реальной компании V&R Mobiiliäri в рамках внешнего проекта. Работы выполнены с использованием Adobe Illustrator, Photoshop и Animate.">
-                           My name is Pavel and I am currently studying at the Estonian Entrepreneurship University of Applied Sciences (EUAS)...
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title lang" data-en="Skills" data-ru="Навыки">Skills</h2>
-
-                <div class="skills__container bd-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
-                    <div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar" style="width:100%"></div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar" style="width:100%"></div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar" style="width:100%"></div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-figma skills__icon'></i>
-                                <span class="skills__name">Figma</span>
-                            </div>
-                            <div class="skills__bar" style="width:100%"></div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bx-data skills__icon'></i>
-                                <span class="skills__name">MySQL</span>
-                            </div>
-                            <div class="skills__bar" style="width:100%"></div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bx-check-circle skills__icon'></i>
-                                <span class="skills__name">QA / Testing</span>
-                            </div>
-                            <div class="skills__bar" style="width:100%"></div>
-                        </div>
-                    </div>
-                    <div>
-
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-adobe skills__icon'></i>
-                                <span class="skills__name">Adobe Illustrator</span>
-                            </div>
-                            <div class="skills__bar" style="width:100%"></div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-adobe skills__icon'></i>
-                                <span class="skills__name">Adobe Photoshop</span>
-                            </div>
-                            <div class="skills__bar" style="width:100%"></div>
-                        </div>
-                        <div>
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class='bx bxl-adobe skills__icon'></i>
-                                    <span class="skills__name">Adobe Animate</span>
-                                </div>
-                                <div class="skills__bar" style="width:100%"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-
-            <!--===== WORK =====-->
-            <section class="logoredesign section" id="logoredesign">
-                <h2 class="section-title lang" data-en="Logo Redesign" data-ru="Редизайн логотипа">Logo Redesign</h2>
-                <p class="logoredesign__description lang" style="max-width: 700px; margin: 0 auto 2rem; text-align: center;"
-                   data-en="In this section, I present the redesign of the logo for V&amp;R Mobiiliäri. The main goal was to modernize the brand identity while preserving the core visual elements. I focused on improving clarity, scalability, and visual harmony, making the logos more adaptable for both digital and print use."
-                   data-ru="В этом разделе представлен редизайн логотипа для компании V&amp;R Mobiiliäri. Основная цель заключалась в обновлении визуальной айдентики при сохранении ключевых элементов. Я сосредоточился на улучшении читаемости, масштабируемости и визуального баланса, чтобы логотип лучше подходил как для цифровых, так и для печатных материалов.">
-                    In this section, I present the redesign of the logo for V&amp;R Mobiiliäri...
+            <div>
+                <h2 class="about__subtitle">I'am Pavel</h2>
+                <p class="about__text">
+                    My name is Pavel and I am currently studying at the Estonian Entrepreneurship University of Applied Sciences (EUAS).
+                    This portfolio showcases creative projects I have completed during my studies — including graphic illustrations and animations.
+                    Additionally, I had the opportunity to redesign the logo for a real company, <strong>V&amp;R Mobiiliäri</strong>, as part of an external project.
                 </p>
-
-                <div class="logoredesign__container bd-grid"style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
-                    <a href="assets/img/vrold.png" data-lightbox="portfolio" class="illustrator__img">
-                        <img src="assets/img/vrold.png" alt="Project Preview">
-                    </a>
-                    <a href="assets/img/vrnew.png" data-lightbox="portfolio" class="illustrator__img">
-                        <img src="assets/img/vrnew.png" alt="Project Preview">
-                    </a>
-
-
-                </div>
-            </section>
-
-            <section class="illustrator section" id="illustrator">
-                <h2 class="section-title">Illustrator</h2>
-
-                <div class="illustrator__container bd-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
-                    <a href="assets/img/illustrator1.png" data-lightbox="portfolio" class="illustrator__img">
-                        <img src="assets/img/illustrator1.png" alt="Project Preview">
-                    </a>
-
-                    <a href="assets/img/illustrator2.png" data-lightbox="portfolio" class="illustrator__img">
-                        <img src="assets/img/illustrator2.png" alt="Project Preview">
-                    </a>
-
-                    <a href="assets/img/illustrator3.png" data-lightbox="portfolio" class="illustrator__img">
-                        <img src="assets/img/illustrator3.png" alt="Project Preview">
-                    </a>
-
-                    <a href="assets/img/illustrator4.png" data-lightbox="portfolio" class="illustrator__img">
-                        <img src="assets/img/illustrator4.png" alt="Project Preview">
-                    </a>
-
-                    <a href="assets/img/illustrator5.png" data-lightbox="portfolio" class="illustrator__img">
-                        <img src="assets/img/illustrator5.png" alt="Project Preview">
-                    </a>
-
-                    <a href="assets/img/illustrator6.png" data-lightbox="portfolio" class="illustrator__img">
-                        <img src="assets/img/illustrator6.png" alt="Project Preview">
-                    </a>
-
-                    <a href="assets/img/illustrator7.png" data-lightbox="portfolio" class="illustrator__img">
-                        <img src="assets/img/illustrator7.png" alt="Project Preview">
-                    </a>
-
-                    <a href="assets/img/illustrator8.png" data-lightbox="portfolio" class="illustrator__img">
-                        <img src="assets/img/illustrator8.png" alt="Project Preview">
-                    </a>
-
-                    <a href="assets/img/illustrator9.png" data-lightbox="portfolio" class="illustrator__img">
-                        <img src="assets/img/illustrator9.png" alt="Project Preview">
-                    </a>
-
-
-
-
-                </div>
-            </section>
-
-            <section class="photoshop section" id="photoshop">
-                <h2 class="section-title">Photoshop</h2>
-
-                <div class="photoshop__container bd-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
-
-                    <a href="assets/img/photoshop1.png" data-lightbox="portfolio" class="photoshop__img">
-                        <img src="assets/img/photoshop1.png" alt="Project Preview">
-                    </a>
-
-                    <a href="assets/img/photoshop2.png" data-lightbox="portfolio" class="photoshop__img">
-                        <img src="assets/img/photoshop2.png" alt="Project Preview">
-                    </a>
-
-                    <a href="assets/img/photoshop3.png" data-lightbox="portfolio" class="photoshop__img">
-                        <img src="assets/img/photoshop3.png" alt="Project Preview">
-                    </a>
-
-                    <a href="assets/img/photoshop4.png" data-lightbox="portfolio" class="photoshop__img">
-                        <img src="assets/img/photoshop4.png" alt="Project Preview">
-                    </a>
-
-                    <a href="assets/img/photoshop5.png" data-lightbox="portfolio" class="photoshop__img">
-                        <img src="assets/img/photoshop5.png" alt="Project Preview">
-                    </a>
-
-                    <a href="assets/img/photoshop6.png" data-lightbox="portfolio" class="photoshop__img">
-                        <img src="assets/img/photoshop6.png" alt="Project Preview">
-                    </a>
-
-                </div>
-            </section>
-
-            <section class="animate section" id="animate">
-                <h2 class="section-title">Animate</h2>
-
-                <div class="animate__container bd-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
-
-                    <a href="assets/img/animate1.gif" data-lightbox="portfolio" class="animate__img">
-                        <img src="assets/img/animate1.gif" alt="Project Preview">
-                    </a>
-
-                    <a href="assets/img/animate2.gif" data-lightbox="portfolio" class="animate__img">
-                        <img src="assets/img/animate2.gif" alt="Project Preview">
-                    </a>
-
-                    <a href="assets/img/animate3.gif" data-lightbox="portfolio" class="animate__img">
-                        <img src="assets/img/animate3.gif" alt="Project Preview">
-                    </a>
-
-                    <a href="assets/img/animate4.gif" data-lightbox="portfolio" class="animate__img">
-                        <img src="assets/img/animate4.gif" alt="Project Preview">
-                    </a>
-
-                    <a href="assets/img/animate5.gif" data-lightbox="portfolio" class="animate__img">
-                        <img src="assets/img/animate5.gif" alt="Project Preview">
-                    </a>
-
-                    <a href="assets/img/animate6.gif" data-lightbox="portfolio" class="animate__img">
-                        <img src="assets/img/animate6.gif" alt="Project Preview">
-                    </a>
-
-
-                </div>
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title lang" data-en="Contact" data-ru="Контакты">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                        <form id="contact-form" class="contact__form">
-                            <input type="text" placeholder="Name" class="contact__input" required>
-                            <input type="email" placeholder="Email" class="contact__input" required>
-                            <textarea cols="0" rows="10" class="contact__input" placeholder="Message" required></textarea>
-                            <button type="submit" class="contact__button button lang" data-en="Send" data-ru="Отправить">Send</button>
-                            <p id="form-message" style="display:none; color: green; margin-top: 1rem;">Thank you! Your message has been sent.</p>
-                        </form>
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER CONTACT =====-->
-        <footer class="footer">
-            <p class="footer__title">Contacts</p>
-            <div class="footer__social">
-                <a href="https://www.facebook.com/pavel.maksimov2010" class="footer__icon" target="_blank">
-                    <i class='bx bxl-facebook'></i>
-                </a>
-                <a href="https://www.instagram.com/_pavel_maksimov_/?igsh=dDZlbG40ZmQzYmVl&utm_source=qr" class="footer__icon" target="_blank">
-                    <i class='bx bxl-instagram'></i>
-                </a>
-                <a href="https://t.me/sniderv2" class="footer__icon" target="_blank">
-                    <i class='bx bxl-telegram'></i>
-                </a>
-                <a href="mailto:pavel.maksimov@gmail.com" class="footer__icon" target="_blank">
-                    <i class='bx bxl-gmail'></i>
-                </a>
+                </p>
             </div>
-            <p class="footer__copy">pavel.maksimov2010@gmail.com</p>
-            <p class="footer__copy">+37255584909</p>
-        </footer>
+        </div>
+    </section>
+
+    <!--===== SKILLS =====-->
+    <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills__container bd-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+            <div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-html5 skills__icon'></i>
+                        <span class="skills__name">HTML5</span>
+                    </div>
+                    <div class="skills__bar" style="width:100%"></div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-css3 skills__icon'></i>
+                        <span class="skills__name">CSS3</span>
+                    </div>
+                    <div class="skills__bar" style="width:100%"></div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxs-paint skills__icon'></i>
+                        <span class="skills__name">UX/UI</span>
+                    </div>
+                    <div class="skills__bar" style="width:100%"></div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-figma skills__icon'></i>
+                        <span class="skills__name">Figma</span>
+                    </div>
+                    <div class="skills__bar" style="width:100%"></div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bx-data skills__icon'></i>
+                        <span class="skills__name">MySQL</span>
+                    </div>
+                    <div class="skills__bar" style="width:100%"></div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bx-check-circle skills__icon'></i>
+                        <span class="skills__name">QA / Testing</span>
+                    </div>
+                    <div class="skills__bar" style="width:100%"></div>
+                </div>
+            </div>
+            <div>
+
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-adobe skills__icon'></i>
+                        <span class="skills__name">Adobe Illustrator</span>
+                    </div>
+                    <div class="skills__bar" style="width:100%"></div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-adobe skills__icon'></i>
+                        <span class="skills__name">Adobe Photoshop</span>
+                    </div>
+                    <div class="skills__bar" style="width:100%"></div>
+                </div>
+                <div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-adobe skills__icon'></i>
+                            <span class="skills__name">Adobe Animate</span>
+                        </div>
+                        <div class="skills__bar" style="width:100%"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <!--===== WORK =====-->
+    <section class="logoredesign section" id="logoredesign">
+        <h2 class="section-title">Logo Redesign</h2>
+        <p class="logoredesign__description" style="max-width: 700px; margin: 0 auto 2rem; text-align: center;">
+            In this section, I present the redesign of the logo for V&R Mobiiliäri.
+            The main goal was to modernize the brand identity while preserving the core visual elements. I focused on improving clarity, scalability, and visual harmony, making the logos more adaptable for both digital and print use.
+        </p>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-        <!-- Lightbox2 JS -->
-        <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
-        <script>
-          function setLanguage(lang) {
-            const elements = document.querySelectorAll('.lang');
-            elements.forEach(el => {
-              const raw = el.getAttribute(`data-${lang}`);
-              if (raw) {
-                // если текст содержит HTML-теги, заменить через innerHTML
-                if (raw.includes('<br>') || raw.includes('<span')) {
-                  el.innerHTML = raw;
-                } else {
-                  el.textContent = raw;
-                }
-              }
-            });
-          }
-        </script>
-    </body>
+        <div class="logoredesign__container bd-grid"style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+            <a href="assets/img/vrold.png" data-lightbox="portfolio" class="illustrator__img">
+                <img src="assets/img/vrold.png" alt="Project Preview">
+            </a>
+            <a href="assets/img/vrnew.png" data-lightbox="portfolio" class="illustrator__img">
+                <img src="assets/img/vrnew.png" alt="Project Preview">
+            </a>
+
+
+        </div>
+    </section>
+
+    <section class="illustrator section" id="illustrator">
+        <h2 class="section-title">Illustrator</h2>
+
+        <div class="illustrator__container bd-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+            <a href="assets/img/illustrator1.png" data-lightbox="portfolio" class="illustrator__img">
+                <img src="assets/img/illustrator1.png" alt="Project Preview">
+            </a>
+
+            <a href="assets/img/illustrator2.png" data-lightbox="portfolio" class="illustrator__img">
+                <img src="assets/img/illustrator2.png" alt="Project Preview">
+            </a>
+
+            <a href="assets/img/illustrator3.png" data-lightbox="portfolio" class="illustrator__img">
+                <img src="assets/img/illustrator3.png" alt="Project Preview">
+            </a>
+
+            <a href="assets/img/illustrator4.png" data-lightbox="portfolio" class="illustrator__img">
+                <img src="assets/img/illustrator4.png" alt="Project Preview">
+            </a>
+
+            <a href="assets/img/illustrator5.png" data-lightbox="portfolio" class="illustrator__img">
+                <img src="assets/img/illustrator5.png" alt="Project Preview">
+            </a>
+
+            <a href="assets/img/illustrator6.png" data-lightbox="portfolio" class="illustrator__img">
+                <img src="assets/img/illustrator6.png" alt="Project Preview">
+            </a>
+
+            <a href="assets/img/illustrator7.png" data-lightbox="portfolio" class="illustrator__img">
+                <img src="assets/img/illustrator7.png" alt="Project Preview">
+            </a>
+
+            <a href="assets/img/illustrator8.png" data-lightbox="portfolio" class="illustrator__img">
+                <img src="assets/img/illustrator8.png" alt="Project Preview">
+            </a>
+
+            <a href="assets/img/illustrator9.png" data-lightbox="portfolio" class="illustrator__img">
+                <img src="assets/img/illustrator9.png" alt="Project Preview">
+            </a>
+
+
+
+
+        </div>
+    </section>
+
+    <section class="photoshop section" id="photoshop">
+        <h2 class="section-title">Photoshop</h2>
+
+        <div class="photoshop__container bd-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+
+            <a href="assets/img/photoshop1.png" data-lightbox="portfolio" class="photoshop__img">
+                <img src="assets/img/photoshop1.png" alt="Project Preview">
+            </a>
+
+            <a href="assets/img/photoshop2.png" data-lightbox="portfolio" class="photoshop__img">
+                <img src="assets/img/photoshop2.png" alt="Project Preview">
+            </a>
+
+            <a href="assets/img/photoshop3.png" data-lightbox="portfolio" class="photoshop__img">
+                <img src="assets/img/photoshop3.png" alt="Project Preview">
+            </a>
+
+            <a href="assets/img/photoshop4.png" data-lightbox="portfolio" class="photoshop__img">
+                <img src="assets/img/photoshop4.png" alt="Project Preview">
+            </a>
+
+            <a href="assets/img/photoshop5.png" data-lightbox="portfolio" class="photoshop__img">
+                <img src="assets/img/photoshop5.png" alt="Project Preview">
+            </a>
+
+            <a href="assets/img/photoshop6.png" data-lightbox="portfolio" class="photoshop__img">
+                <img src="assets/img/photoshop6.png" alt="Project Preview">
+            </a>
+
+        </div>
+    </section>
+
+    <section class="animate section" id="animate">
+        <h2 class="section-title">Animate</h2>
+
+        <div class="animate__container bd-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+
+            <a href="assets/img/animate1.gif" data-lightbox="portfolio" class="animate__img">
+                <img src="assets/img/animate1.gif" alt="Project Preview">
+            </a>
+
+            <a href="assets/img/animate2.gif" data-lightbox="portfolio" class="animate__img">
+                <img src="assets/img/animate2.gif" alt="Project Preview">
+            </a>
+
+            <a href="assets/img/animate3.gif" data-lightbox="portfolio" class="animate__img">
+                <img src="assets/img/animate3.gif" alt="Project Preview">
+            </a>
+
+            <a href="assets/img/animate4.gif" data-lightbox="portfolio" class="animate__img">
+                <img src="assets/img/animate4.gif" alt="Project Preview">
+            </a>
+
+            <a href="assets/img/animate5.gif" data-lightbox="portfolio" class="animate__img">
+                <img src="assets/img/animate5.gif" alt="Project Preview">
+            </a>
+
+            <a href="assets/img/animate6.gif" data-lightbox="portfolio" class="animate__img">
+                <img src="assets/img/animate6.gif" alt="Project Preview">
+            </a>
+
+
+        </div>
+    </section>
+
+    <!--===== CONTACT =====-->
+    <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact__container bd-grid">
+            <form id="contact-form" class="contact__form">
+                <input type="text" placeholder="Name" class="contact__input" required>
+                <input type="email" placeholder="Email" class="contact__input" required>
+                <textarea cols="0" rows="10" class="contact__input" placeholder="Message" required></textarea>
+                <button type="submit" class="contact__button button">Send</button>
+                <p id="form-message" style="display:none; color: green; margin-top: 1rem;">Thank you! Your message has been sent.</p>
+            </form>
+            </form>
+        </div>
+    </section>
+</main>
+
+<!--===== FOOTER CONTACT =====-->
+<footer class="footer">
+    <p class="footer__title">Contacts</p>
+    <div class="footer__social">
+        <a href="https://www.facebook.com/pavel.maksimov2010" class="footer__icon" target="_blank">
+            <i class='bx bxl-facebook'></i>
+        </a>
+        <a href="https://www.instagram.com/_pavel_maksimov_/?igsh=dDZlbG40ZmQzYmVl&utm_source=qr" class="footer__icon" target="_blank">
+            <i class='bx bxl-instagram'></i>
+        </a>
+        <a href="https://t.me/sniderv2" class="footer__icon" target="_blank">
+            <i class='bx bxl-telegram'></i>
+        </a>
+        <a href="mailto:pavel.maksimov@gmail.com" class="footer__icon" target="_blank">
+            <i class='bx bxl-gmail'></i>
+        </a>
+    </div>
+    <p class="footer__copy">pavel.maksimov@gmail.com</p>
+    <p class="footer__copy">+37255584909</p>
+</footer>
+
+
+<!--===== SCROLL REVEAL =====-->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!--===== MAIN JS =====-->
+<script src="assets/js/main.js"></script>
+<!-- Lightbox2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
+</body>
 </html>
