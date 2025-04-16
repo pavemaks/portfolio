@@ -484,3 +484,10 @@ img {
     width: 450px;
   }
 }
+
+.work__date {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 0.3rem;
+}
